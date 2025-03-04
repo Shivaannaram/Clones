@@ -18,7 +18,7 @@
     /* width: 105px; */
     width: 6.5rem;
     height: 50px;
-    background-image: url('Amazon_logo.png');
+    background-image: url('./images/Amazon_logo.png');
     /* background-size: cover; */
     padding:1px 8px 0px 6px;
 }
@@ -160,8 +160,9 @@
 }
 .hero-section{
     height: 600px;
-    background-image: url('carousel.jpg');
-    background-size: contain;
+    background-image: url('./images/carousel.jpg');
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
@@ -174,7 +175,7 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    bottom: 16rem;
+    top: 25rem;
     border-radius: 10px;
 }
 .hero-para{
@@ -185,13 +186,13 @@
     justify-content: center;
 }
 .eight-boxes{
-    height: 1000px;
+    height: 950px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
     background-color: rgb(204, 204, 204,0.3);
-    margin-top:-15rem;
+    margin-top:-13rem;
     padding:20px 0px;
 }
 .box{
@@ -236,7 +237,7 @@
     height: 100%; 
 }
 .box2-image{
-    background-image: url('box-2-1.jpg');
+    background-image: url('./images/box-2-1.jpg');
     height: 100%;
     margin:10px 0px;
 }
@@ -257,12 +258,28 @@
 }
 .top-picks{
     height: 280px;
-    background-color: green;
+    display: flex;
+   justify-content: center;
+   background-color: rgb(204, 204, 204, 0.3);
+
+}
+.top-picks-content{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: flex-start;
+    width:95%;
+    background-color: white;  
+    overflow-x: auto;   
+    padding:10px 20px;
+}
+.top-picks-heading{
+    font-size: 21px;
 }
 .top-picks-all-images {
     display: flex;
-    flex-wrap: wrap; /* Ensures images wrap if they exceed container width */
-    gap: 10px; /* Adds spacing between images */
+    gap: 10px;
+    padding:10px 0px 0px 0px;  
 }
 
 .top-picks-images {
@@ -272,4 +289,126 @@
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block; /* Ensure width adapts to content */
+}
+.personalized-content{
+    padding:20px 10px;
+}
+
+.personalized{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:30px 0px;
+}
+.personalized-h2{
+    font-size: 24px;
+    color:#000000
+}
+.personalized-a{
+    text-decoration: none;
+    padding:8px 80px ;
+    background-color: rgba(250, 147, 4, 0.834);
+    border-radius: 15px;
+    color: #0f1111;
+    font-size: 13px;
+    margin-top:1rem;
+}
+.personalized-p{
+    font-size: 11px;
+    color:#000000;
+    margin-top:0.2rem;
+}
+.footer{
+    height:625px;
+    background-color:#232f3e;
+}
+.back-to-top{
+    height: 50px;
+    background-color:rgba(245, 245, 245, 0.1);
+    /* opacity: 0.5; */
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.back-to-top a{
+    text-decoration: none;
+    font-size: 13px;
+    color:#ffffff;
+}
+.footer-content{
+    height: 360px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px 0px 0px 0px;
+}
+.footer-ul-content{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+   
+}
+.unorderlist{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.unorderlist p{
+    font-size: 16px;
+    padding-bottom: 14px;
+    font-weight: 700;
+    color: #ffffff;
+}
+.unorderlist li{
+    list-style-type: none;
+    color: #DDDDDD;
+    font-size: 14px;
+}
+.footer-third-section{
+    height: 70px;
+    
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid rgb(249, 228, 228,0.4);
+    padding:50px;
+    border-bottom: 1px solid rgb(249, 228, 228,0.4);
+}
+.footer-third-content{
+    /* background-color: pink; */
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer-logo-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+.footer-logo-content p{
+    padding:10px 20px;
+    border:1px solid white;
+    color: #cccccc;
+    font-size: 13px;
+}
+.copyrights{
+    background-color: #131a22;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.copyright-content{
+    display: flex;
+    gap: 40px;
+}
+.copyright-content p,.copyright-end{
+    font-size: 12px;
+    color:#DDDDDD;
 }
