@@ -272,7 +272,9 @@
     background-color: white;  
     overflow-x: auto;   
     padding:10px 20px;
+    scrollbar-width: thin;
 }
+
 .top-picks-heading{
     font-size: 21px;
 }
